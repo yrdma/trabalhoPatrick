@@ -1,29 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Projeto devOps</h1>
     <button onclick="gerarMensagem()">Clique para um elogio</button>
     <p id="mensagem"></p>
-
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f0f2f5;
+      }
+      button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      #mensagem {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        color: #333;
+        font-weight: bold;
+      }
+    </style>
     <script>
-        function gerarMensagem() {
-            const frases = [
-                "Você é incrível!",
-                "Código limpo é a sua cara!",
-                "Hoje é um ótimo dia para programar.",
-                "Seu potencial é ilimitado!",
-                "Uau, que clique preciso!"
-            ];
-            const aleatorio = Math.floor(Math.random() * frases.length);
-            document.getElementById("mensagem").innerText = frases[aleatorio];
-        }
+      function gerarMensagem() {
+        const frases = [
+          "Você é incrível!",
+          "Código limpo é a sua cara!",
+          "Hoje é um ótimo dia para programar.",
+          "Seu potencial é ilimitado!",
+          "Uau, que clique preciso!",
+        ];
+        const aleatorio = Math.floor(Math.random() * frases.length);
+        document.getElementById("mensagem").innerText = frases[aleatorio];
+      }
     </script>
-
-
-</body>
+  </body>
 </html>
