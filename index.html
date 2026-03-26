@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Projeto devOps</h1>
+    <button onclick="gerarMensagem()">Clique para um elogio</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function gerarMensagem() {
+            const frases = [
+                "Você é incrível!",
+                "Código limpo é a sua cara!",
+                "Hoje é um ótimo dia para programar.",
+                "Seu potencial é ilimitado!",
+                "Uau, que clique preciso!"
+            ];
+            const aleatorio = Math.floor(Math.random() * frases.length);
+            document.getElementById("mensagem").innerText = frases[aleatorio];
+        }
+    </script>
+
+
+</body>
+</html>
